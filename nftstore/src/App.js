@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import nftstoreABI from "./artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
@@ -73,7 +73,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter basename="/NFTMarketStoreDapp">
+    <HashRouter basename="/NFTMarketStoreDapp">
       {chainID && <NavBar account={account} connect={web3Connection} />}
       <Routes>
         <Route
@@ -99,7 +99,7 @@ const App = () => {
         />
         <Route path="*" element={<Error404/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
