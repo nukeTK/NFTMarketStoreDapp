@@ -77,24 +77,24 @@ const App = () => {
       {chainID && <NavBar account={account} connect={web3Connection} />}
       <Routes>
         <Route
-          path=""
+          path="/"
           element={<Home contract={web3.contract} chainId={chainID} />}
         />
-        <Route path="Create-nft" element={<CreateNFT web3={web3} />} />
+        <Route path="NFTMarketStoreDapp/Create-nft" element={<CreateNFT web3={web3} />} />
         <Route
-          path="/space-collection"
+          path="/NFTMarketStoreDapp/space-collection"
           element={<Store contract={web3.contract} />}
         />
         <Route
-          path="/space-collection/nft-space"
+          path="/NFTMarketStoreDapp/space-collection/nft-space"
           element={<BuyPage web3={web3} address={account} />}
         />
         <Route
-          path="/my-space"
+          path="/NFTMarketStoreDapp/my-space"
           element={<MySpace web3={web3} account={account} />}
         />
         <Route
-          path="/my-space/mynft-space"
+          path="/NFTMarketStoreDapp/my-space/mynft-space"
           element={<UpdatePage web3={web3} address={account} />}
         />
         <Route path="*" element={<Error404/>} />

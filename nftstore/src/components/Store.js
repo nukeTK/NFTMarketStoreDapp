@@ -143,7 +143,7 @@ const Store = (props) => {
                         </Typography>
                       </Paper>
                       <Link
-                        to="/space-collection/nft-space"
+                        to="/NFTMarketStoreDapp/space-collection/nft-space"
                         state={{ data: item }}
                         style={{ textDecoration: "none", marginLeft: "auto" }}
                       >

@@ -80,14 +80,14 @@ const NavBar = (props) => {
               </Typography>
               <Divider />
               <Typography variant="body1" component="p">
-                <Link to="" style={{ textDecoration: "none", color: "black" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "black" }}>
                   HOME
                 </Link>
               </Typography>
               <Divider />
               <Typography variant="body2" component="p">
                 <Link
-                  to="/space-collection"
+                  to="NFTMarketStoreDapp/space-collection"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   SPACE COLLECTION
@@ -96,7 +96,7 @@ const NavBar = (props) => {
               <Divider />
               <Typography variant="body1" component="p">
                 <Link
-                  to="/Create-nft"
+                  to="NFTMarketStoreDapp/Create-nft"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   CREATE
@@ -105,7 +105,7 @@ const NavBar = (props) => {
               <Divider />
               <Typography variant="body1" component="p">
                 <Link
-                  to="/my-space"
+                  to="NFTMarketStoreDapp/my-space"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   MY SPACE
@@ -127,7 +127,7 @@ const NavBar = (props) => {
           </Typography>
           <Typography variant="h6" component="h1">
             <Link
-              to="/space-collection"
+              to="NFTMarketStoreDapp/space-collection"
               style={{ textDecoration: "none", color: "black" }}
             >
               SPACE COLLECTION
@@ -135,7 +135,7 @@ const NavBar = (props) => {
           </Typography>
           <Typography variant="h6" component="h1">
             <Link
-              to="/Create-nft"
+              to="NFTMarketStoreDapp/Create-nft"
               style={{ textDecoration: "none", color: "black" }}
             >
               CREATE
@@ -143,7 +143,7 @@ const NavBar = (props) => {
           </Typography>
           <Typography variant="h6" component="h1">
             <Link
-              to="/my-space"
+              to="NFTMarketStoreDapp/my-space"
               style={{ textDecoration: "none", color: "black" }}
             >
               MY SPACE

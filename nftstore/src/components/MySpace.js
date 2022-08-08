@@ -154,7 +154,7 @@ const MySpace = (props) => {
                       ></Paper>
 
                       <Link
-                        to="/my-space/mynft-space"
+                        to="/NFTMarketStoreDapp/my-space/mynft-space"
                         state={{ data: item }}
                         style={{ textDecoration: "none",margin: "auto" }}
                       >
