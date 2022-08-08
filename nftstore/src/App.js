@@ -73,7 +73,7 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/NFTMarketStoreDapp">
       {chainID && <NavBar account={account} connect={web3Connection} />}
       <Routes>
         <Route
