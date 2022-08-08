@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NFTMarketStoreDapp/static/css/main.5b5becd9.css",
-    "main.js": "/NFTMarketStoreDapp/static/js/main.e49cc18e.js",
+    "main.js": "/NFTMarketStoreDapp/static/js/main.1b50119f.js",
     "static/media/profile4.jpg": "/NFTMarketStoreDapp/static/media/profile4.36b1999f4881ce79d1a4.jpg",
     "static/media/nft.jpg": "/NFTMarketStoreDapp/static/media/nft.a96ea516b3eea2d1567c.jpg",
     "index.html": "/NFTMarketStoreDapp/index.html",
     "main.5b5becd9.css.map": "/NFTMarketStoreDapp/static/css/main.5b5becd9.css.map",
-    "main.e49cc18e.js.map": "/NFTMarketStoreDapp/static/js/main.e49cc18e.js.map"
+    "main.1b50119f.js.map": "/NFTMarketStoreDapp/static/js/main.1b50119f.js.map"
   },
   "entrypoints": [
     "static/css/main.5b5becd9.css",
-    "static/js/main.e49cc18e.js"
+    "static/js/main.1b50119f.js"
   ]
 }
