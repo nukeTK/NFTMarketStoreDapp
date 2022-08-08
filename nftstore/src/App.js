@@ -82,19 +82,19 @@ const App = () => {
         />
         <Route path="Create-nft" element={<CreateNFT web3={web3} />} />
         <Route
-          path="space-collection"
+          path="/space-collection"
           element={<Store contract={web3.contract} />}
         />
         <Route
-          path="space-collection/nft-space"
+          path="/space-collection/nft-space"
           element={<BuyPage web3={web3} address={account} />}
         />
         <Route
-          path="my-space"
+          path="/my-space"
           element={<MySpace web3={web3} account={account} />}
         />
         <Route
-          path="my-space/mynft-space"
+          path="/my-space/mynft-space"
           element={<UpdatePage web3={web3} address={account} />}
         />
         <Route path="*" element={<Error404/>} />
