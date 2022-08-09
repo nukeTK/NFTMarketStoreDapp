@@ -53,8 +53,8 @@ export const BuyPage = (props) => {
         <Card
           elevation={10}
           sx={{
-            maxWidth: 600,
-            maxHeight: 800,
+            width: 600,
+            height: 800,
             borderRadius: "20px",
             backgroundColor: "#F2ECFF",
           }}

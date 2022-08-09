@@ -21,7 +21,7 @@ const MySpace = (props) => {
   const [myNfts, setmyNfts] = useState();
   const [tokenArray, setTokenArray] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const [message, setMessage] = useState(false);
   useEffect(() => {
     const getData = async () => {
       const _signer = props.web3.provider.getSigner();
@@ -55,10 +55,13 @@ const MySpace = (props) => {
       }
       setTokenArray(arrayNft);
       setLoading(false);
+      if (myNfts.length === 0) {
+        setMessage(true);
+      }
     };
     myNfts && data();
   }, [myNfts]);
-
+ 
   return (
     <Box
       component="div"
@@ -108,7 +111,7 @@ const MySpace = (props) => {
         }}
       >
         <Grid container direction="row" spacing={1}>
-          {(loading ? Array.from(new Array(10)) : tokenArray).map(
+          {(loading ? Array.from(new Array(8)) : tokenArray).map(
             (item, index) => (
               <Grid key={index} item sx={{ ml: "5px" }}>
                 {item ? (
@@ -156,7 +159,7 @@ const MySpace = (props) => {
                       <Link
                         to="/NFTMarketStoreDapp/my-space/mynft-space"
                         state={{ data: item }}
-                        style={{ textDecoration: "none",margin: "auto" }}
+                        style={{ textDecoration: "none", margin: "auto" }}
                       >
                         <Button
                           variant="contained"
@@ -186,6 +189,7 @@ const MySpace = (props) => {
             )
           )}
         </Grid>
+        {message && <Typography variant="h2" color="white"  sx={{textAlign:"center"}}>No NFTs Created!!!</Typography>}
       </Paper>
     </Box>
   );

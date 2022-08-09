@@ -20,8 +20,8 @@ const Home = (props) => {
       setLastToken(meta.data.image);
       setLoading(false);
     };
-    props.contract && getToken();
-  }, []);
+    props.chainId && getToken();
+  }, [props.contract,props.chainId]);
 
   return (
     <Box>
