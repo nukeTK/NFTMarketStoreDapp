@@ -73,7 +73,7 @@ const App = () => {
   }, []);
 
   return (
-    <HashRouter basename="/NFTMarketStoreDapp">
+    <BrowserRouter basename="/NFTMarketStoreDapp">
       {chainID && <NavBar account={account} connect={web3Connection} />}
       <Routes>
         <Route
@@ -99,7 +99,7 @@ const App = () => {
         />
         <Route path="*" element={<Error404/>} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
