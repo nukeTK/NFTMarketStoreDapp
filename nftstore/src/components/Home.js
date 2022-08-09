@@ -22,7 +22,7 @@ const Home = (props) => {
     };
     props.contract && getToken();
   }, []);
-  console.log(props.chainId)
+
   return (
     <Box>
       <img
